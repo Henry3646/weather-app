@@ -1,6 +1,4 @@
 body {
-    display: flex;
-    align-items: center;
     width: 100vw;
     height: 100vh;
     margin: 0%;
@@ -8,14 +6,17 @@ body {
     background-size: cover;
     color: white;
     font-family: 'Roboto' , sans-serif;
+    overflow: hidden;
 }
 
 #main {
     display: flex;
     width: 500px;
     height: 300px;
-    margin-left: 15vw;
+    margin-left: 10rem;
     flex-direction: column;
+    position: absolute;
+    margin-top: 12rem;
     
 }
 
@@ -64,5 +65,53 @@ body {
     width: 80%;
     height: 10%;
     color: white;
-    font-size: 22px;
+    font-size: 18px;
 }
+
+.form {
+    background-color: rgba(255, 255, 255, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    float: right;
+    position: relative;
+    margin: 2.5rem 3.5rem 0 0;
+    border-radius: 10px;
+    width: 200px;
+    
+}
+
+input {
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    caret-color: white;
+    color: white;
+}
+
+input::placeholder {
+    color: white;
+    font-size: 15px;
+}
+input:focus {
+    outline: none;
+}
+.submitform {
+    background-image: url(./search-13-24.png);
+    height: 24px;
+    width: 24px;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    border-radius: 5px;
+    position: relative;
+    top: 0;
+    transition: top ease 0.5s;
+}
+
+.submitform:hover {
+    cursor: pointer;
+    top: -2px;
+}
+
