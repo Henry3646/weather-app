@@ -78,7 +78,7 @@ body {
     position: relative;
     margin: 2.5rem 3.5rem 0 0;
     border-radius: 10px;
-    width: 200px;
+    width: 250px;
     
 }
 
@@ -94,9 +94,11 @@ input::placeholder {
     color: white;
     font-size: 15px;
 }
+
 input:focus {
     outline: none;
 }
+
 .submitform {
     background-image: url(./search-13-24.png);
     height: 24px;
